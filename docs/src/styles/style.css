@@ -6,17 +6,17 @@
 
 @font-face {
   font-family: 'RomanUncialModern';
-  src: url('/fonts/RomanUncialModern.ttf') format('truetype');
+  src: url('../fonts/RomanUncialModern.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Shrek';
-  src: url('/fonts/SHREK_.TTF') format('truetype');
+  src: url('../fonts/SHREK_.TTF') format('truetype');
 }
 
 @font-face {
   font-family: 'ChristensenCaps';
-  src: url('/fonts/ChristensenCaps.ttf') format('truetype');
+  src: url('../fonts/ChristensenCaps.ttf') format('truetype');
 }
 
 /*END FONTS*/
