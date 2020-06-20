@@ -46,7 +46,7 @@ p {
 
 a {
   position: absolute;
-  bottom: 20px;
+  bottom: 40px;
 
   padding: 14px 40px;
   border-radius: 10px;
@@ -65,10 +65,10 @@ a {
 ******************************************************************/
 h1 {
   max-width: 255px;
-  margin: 40px auto;
+  margin: 60px auto 30px;
   padding-left: 20px;
 
-  font-size: 16px;
+  font-size: 18px;
   line-height: 18px;
 
   font-weight: 400;
@@ -117,52 +117,28 @@ a:last-of-type:active {
 fieldset {
   display: flex;
   flex-direction: row;
+  margin: 0 auto;
+  max-width: 500px;
 
   border: 0;
 }
 
 label {
-  border-color: blue;
   height: 326px;
   width: 255px;
-  padding: 20px 0;
+  padding: 30px 0;
   text-align: center;
-  margin: 20px;
+  margin: 5px;
 
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
   cursor: pointer;
+  color: rgb(94, 94, 94);
 
+  position: relative;
   transform: scale(0.9);
   transition: 0.5s;
   background-color: #DAC198;
-}
-
-input + label::before {
-  filter: grayscale(1);
-  transition: 0.5s;
-  background-size: 80%;
-  background-position: center center;
-}
-
-input:checked + label {
-  transform: scale(1);
-  transition: 0.5s;
-  background-color: #EED6B0;
-}
-
-input:checked + label::before {
-  filter: grayscale(0);
-  background-size: 100%;
-  background-position: center center;
-}
-
-label:hover {
-  /* background-color: yellow; */
-}
-
-label {
-  position: relative;
 }
 
 label::before {
@@ -174,10 +150,41 @@ label::before {
   position: absolute;
   background-repeat: no-repeat;
   background-size: 80%;
-  background-position: center center;
+  background-position: center left;
   background-size: 100%;
   bottom: 10px;
   right: -20px;
+
+  filter: grayscale(1);
+  transition: 0.5s;
+  background-size: 80%;
+  background-position: center center;
+}
+
+input:checked + label {
+  transform: scale(1);
+  transition: 0.5s;
+  background-color: #EED6B0;
+  font-size: 18px;
+  color: #435707;
+}
+
+input:checked + label::before {
+  filter: grayscale(0);
+  background-size: 100%;
+  background-position: center left;
+}
+
+label:hover {
+  /* background-color: yellow; */
+}
+
+label:first-of-type {
+  margin-left: 20px;
+}
+
+label:last-of-type {
+  margin-right: 40px;
 }
 
 label:first-of-type::before {
@@ -194,7 +201,7 @@ label:last-of-type::before {
   background-repeat: no-repeat;
   background-size: 80%;
   background-position: center center;
-  left: -20px;
+  left: -15px;
 }
 
 /*END FIELDSET*/
@@ -209,6 +216,39 @@ label:last-of-type::before {
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap;
+}
+
+@media only screen and (max-width: 380px) {
+  a {
+    padding: 14px 20px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  h1 {
+    max-width: none;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  h1 {
+    margin: 80px auto;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  fieldset {
+    margin: 150px auto;
+  }
+
+  a:first-of-type {
+    left: 35%;
+  }
+
+  a:last-of-type {
+    right: 35%;
+  }
 }
 
 /*Author: uxtothemax*/
