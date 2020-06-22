@@ -12,3 +12,7 @@ $(".left").click(function(){
 });
 
 // https://www.w3schools.com/bootstrap/bootstrap_ref_js_carousel.asp
+// https://gist.github.com/rxaviers/7360908
+// https://css-tricks.com/simple-swipe-with-vanilla-javascript/
+// https://www.w3schools.com/howto/howto_js_slideshow.asp
+// https://codepen.io/Schepp/pen/WNbQByE
